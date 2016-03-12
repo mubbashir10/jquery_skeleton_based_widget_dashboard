@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+	<!--meta information-->
+	<head>
+		<title>My WorkSpace</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="icon" type="image/png" href="images/logo.png">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/skeleton.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800" type="text/css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/widgets.js"></script>
+		<script src="js/analClock.js"></script>
+		<script src="js/digiClock.js"></script>
+		<script src="js/calendar.js"></script>
+		<script src="js/weather.js"></script>
+		<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	</head>
+
+
+	<!--content-->
+	<body>
+
+		<!--header-->
+	    <header>
+	    	<div class="container">
+	    		<div class="row">
+					<div class="nine columns">
+						<h5 style="font-weight:bold;"><img src="images/logo.png"> My WorkSpace</h5>
+					</div>
+			    </div>	
+			</div>    	
+	    </header>
+
+
+	    <!--add widgets bar-->
+		<div class="container wrapper">
+			<div class="row">
+				<div class="twelve columns"><h6 class="margin-top-max margin-bottom-mid">Choose your widget from below options and then click add button</div></h6>
+			</div>
+			<div class="row">
+				<div class="seven columns">
+					<select class="u-full-width u-pull-left" id="widgetList">
+					    <option value="analogClock">Analog Clock</option>
+					    <option value="digitalClock">Digital Clock</option>
+					    <option value="calendar">Calendar</option>
+					    <option value="weather">Weather</option>
+					</select>
+				</div>
+		    	<div class="five columns">
+		    		<button onclick=resetWidgetArea()><i class="fa fa-undo"></i>&nbsp;&nbsp;Reset</button>
+					<button onclick=addWidget()><i class="fa fa-plus"></i>&nbsp;&nbsp;Add Widget</button>
+				</div>
+			</div>
+		</div>
+
+
+	    <!--widget area-->
+		<div class="container">	
+
+			<div class="placeholder margin-top-mid margin-bottom-mid">
+				<h3>OOPS! no widget found</h3>
+				<span>use the above selection menu and insert some cool widgets here</span>
+			</div>
+
+			<!--cardspace-->
+			<div class="row margin-top-max margin-bottom-mid cardspace"></div>
+			
+			<!--enlarged card-->
+			<div class="row margin-top-max margin-bottom-mid cardhome"></div>
+	
+		</div>
+
+
+		
+		<footer class="u-full-width">
+			<div class="u-pull-left">Copyright &copy; 2015 - All Rights Reserved</div>
+			<div class="u-pull-right">Designed by <a href="http://mubbashir10.com">Mubbashir10</a></div>
+			<br>
+		</footer>
+
+	</body>
+
+</html>
